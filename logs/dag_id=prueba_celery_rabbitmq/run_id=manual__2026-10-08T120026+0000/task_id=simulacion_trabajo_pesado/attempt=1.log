@@ -1,0 +1,20 @@
+{"timestamp":"2026-10-08T12:01:01.516482Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-08T12:01:01.517483Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test_celery_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-08T12:01:01.528337Z","level":"warning","event":"The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/test_celery_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-10-08T12:01:01.528439Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/test_celery_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-10-08T12:01:01.543983Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:01.544495Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:01.545052Z","level":"info","event":"Current task name:simulacion_trabajo_pesado","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:01.545476Z","level":"info","event":"Dag name:prueba_celery_rabbitmq","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:01.545908Z","level":"info","event":"Iniciando procesamiento de datos...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:01.546276Z","level":"info","event":"Procesando lote 1/5...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:04.546261Z","level":"info","event":"Procesando lote 2/5...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:07.546873Z","level":"info","event":"Procesando lote 3/5...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:10.547031Z","level":"info","event":"Procesando lote 4/5...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:13.547081Z","level":"info","event":"Procesando lote 5/5...","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:16.547226Z","level":"info","event":"¡Procesamiento completado con éxito!","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:16.547323Z","level":"info","event":"Done. Returned value was: Trabajo finalizado","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":217}
+{"timestamp":"2026-10-08T12:01:16.547812Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01a11b63-289b-7c57-8a61-39e3b8a2dfb8'), task_id='simulacion_trabajo_pesado', dag_id='prueba_celery_rabbitmq', run_id='manual__2026-10-08T12:00:26+00:00', try_number=1, dag_version_id=UUID('01a11b60-a92d-75d7-aea6-e183d7a0ccf7'), map_index=-1, hostname='bfbfd2a6ed9a', context_carrier={}, task=<Task(PythonOperator): simulacion_trabajo_pesado>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 10, 8, 12, 1, 1, 219042, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1370}
+{"timestamp":"2026-10-08T12:01:16.580408Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:16.580974Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-10-08T12:01:16.581542Z","level":"info","event":"Task operator:<Task(PythonOperator): simulacion_trabajo_pesado>","logger":"task.stdout"}
